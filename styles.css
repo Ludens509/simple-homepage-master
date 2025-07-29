@@ -12,6 +12,7 @@
 
 body {
   height: 100vh;
+  width: fit-content;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -65,12 +66,10 @@ ul {
 
 .hero-section-container {
   display: flex;
-  margin: 50px 60px;
+ justify-content: center;
 }
 .hero-section-container > .hero-section {
   flex: 1;
-  justify-content: flex-start;
- 
 }
 .hero-section-container :last-child {
   flex: 1;
@@ -84,18 +83,47 @@ ul {
 }
 
 .hero-section h1 {
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   /* font-size: 16pxrem; */
   font-weight: 800;
 }
-.btn-hero{
-      background-color: #2A4DD0;
-    padding: 16px;
-    border-style: none;
-    border-radius: 8px;
-    width: 40%;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin: 16px 0;
+.btn-hero {
+  background-color: #2a4dd0;
+  padding: 16px;
+  border-style: none;
+  border-radius: 8px;
+  width: 40%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 16px 0;
+}
+.feature-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 25px;
+}
+.feature-items  h4 {
+  margin: 20px 0;
+}
+.media-container{
+  display: flex;
+ justify-content: center;
+}
+.media-container > .gif-video {
+  flex: 1;
+}
+.media-container :last-child {
+  flex: 1;
+}
+
+@media screen and (max-width:700px){
+  .feature-items{
+    grid-template-columns: repeat(1, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  .hero-section-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
 }
