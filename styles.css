@@ -10,9 +10,8 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  width: fit-content;
+body,
+html {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
@@ -23,7 +22,7 @@ body {
   background-color: #f2f9fe;
   margin: 0 20px;
 }
-.header-container{
+.header-container {
   margin-bottom: 30px;
 }
 .header-list {
@@ -72,7 +71,6 @@ a:active {
   margin-top: 16px;
   color: rgb(55, 65, 81);
 }
-
 
 /* THIS WHERE THE HEADER END */
 
@@ -167,6 +165,7 @@ a:active {
 .cta-section > .cta-text {
   flex: 1;
   color: thistle;
+  margin-bottom: 20px;
 }
 .cta-section .newsletter-form {
   position: relative;
@@ -197,6 +196,81 @@ a:active {
   margin-left: 100px;
 }
 /*  */
+
+.contact-form-section {
+  background-color: #ffffff;
+  margin: 20px 300px;
+  border-radius: 8px;
+  padding: 20px 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input {
+  margin: 16px 0;
+  width: 100%;
+  height: 30px;
+  border: thin solid gray;
+  border-radius: 6px;
+}
+.contact-form-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#phoneNumber {
+  position: relative;
+  border-left: none;
+  width: 100%;
+  border-radius: 0;
+}
+.select-dropdown {
+  position: relative;
+  height: 30px;
+}
+.btn-submit {
+  background-color: #2a4dd0;
+  padding: 8px;
+  border-style: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+input:focus {
+  border: thin solid #2a4dd0;
+  outline: none;
+  box-shadow: 0 0 5px rgba(42, 77, 208, 0.3);
+}
+
+/*  */
+.location-section-infos {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  background-color: #ffffff;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 20px 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.location-section-infos table {
+  padding: 20px;
+}
+td {
+  padding: 20px;
+  border-bottom: thin dashed #223344;
+  text-align: center;
+  border-collapse: collapse;
+}
+th {
+  padding: 50px 0;
+  border-bottom: thin dashed #223344;
+  border-collapse: collapse;
+}
+
 /*THIS PART IS ENTAILS THE RESPONSIVE PROPERTY
 /*  */
 
@@ -230,8 +304,35 @@ a:active {
   h2 {
     margin: 0;
   }
-}
+  .contact-form-inputs {
+    flex-direction: column;
+  }
+  .contact-form-section {
+    margin: 0;
+  }
+  .contact-form-inputs {
+    display: flex;
+    flex-direction: row;
+  }
 
-.author-info a {
-  text-decoration: none;
+  .location-section-infos table {
+    display: flex;
+  }
+  td {
+    display: flex;
+    padding: 10px;
+    border-bottom: thin dashed #223344;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  th {
+    display: flex;
+    padding: 0;
+    border-bottom: thin dashed #223344;
+    border-collapse: collapse;
+  }
+
+  .author-info a {
+    text-decoration: none;
+  }
 }
