@@ -124,6 +124,11 @@ ul {
     margin: auto;
     width: 80%; 
 }
+.media-container> .media-text{
+  /* display: flex; */
+  align-content: center;
+   
+}
  .gif-video img{
   width: 50%;
   border-radius: 8px;
@@ -141,5 +146,8 @@ ul {
   }
   .hero-image{
     background-image: url(./resources/hero-image-simple-homepage@2x.png);
+  }
+  .media-container{
+    flex-direction: column;
   }
 }
