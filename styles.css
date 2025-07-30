@@ -21,6 +21,8 @@ html {
   flex-direction: column;
   background-color: #f2f9fe;
   margin: 0 20px;
+  width: 100%;
+  height: 100%;
 }
 .header-container {
   margin-bottom: 30px;
@@ -175,7 +177,7 @@ a:active {
   position: relative;
   display: flex;
   flex: 1;
-  /* align-content: center; */
+  margin: auto;
   justify-content: center;
 }
 .newsletter-form input {
