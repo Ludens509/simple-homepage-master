@@ -74,7 +74,7 @@ ul {
 .hero-section-container :last-child {
   flex: 1;
 }
-.hero-image{
+.hero-image {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -103,6 +103,11 @@ ul {
   font-size: 16px;
   margin: 16px 0;
 }
+
+/*  */
+
+
+/*  */
 .feature-items {
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 1fr));
@@ -110,30 +115,77 @@ ul {
 }
 .feature-items h4 {
   margin: 20px 0;
+
+}
+.features-container h2{
+  margin: 30px 40% 50px 0;
 }
 .media-container {
   display: flex;
   justify-content: center;
 }
-.media-text,.gif-video {
-  flex: 1; 
+.media-text,
+.gif-video {
+  flex: 1;
 }
-.media-container> .gif-video{
+.media-container > .gif-video {
   display: flex;
   justify-content: center;
-    margin: auto;
-    width: 80%; 
+  margin: auto;
+  width: 80%;
 }
-.media-container> .media-text{
+
+.media-container > .media-text {
   /* display: flex; */
   align-content: center;
-   
 }
- .gif-video img{
+.gif-video img {
   width: 50%;
   border-radius: 8px;
-} 
+}
+/*  */
 
+/*  */
+.cta-section {
+  display: flex;
+  align-items: center;
+  background-color: #909193;
+  padding: 80px 50px;
+}
+.cta-section > .cta-text {
+  flex: 1;
+}
+.cta-section .newsletter-form {
+  position: relative;
+  display: flex;
+  flex: 1;
+  /* align-content: center; */
+  justify-content: center;
+}
+.newsletter-form input {
+  width: 50%;
+  height: 50px;
+}
+.newsletter-email-input + .btn-cta {
+  height: 50px;
+  width: 50px;
+}
+.newsletter-email-input {
+  border: none;
+  display: inline-flex;
+  /* margin-left: 100px; */
+}
+.btn-cta {
+  position: relative;
+  right: 100px;
+  top: 0;
+  border: none;
+  /* display: inline-flex */
+  margin-left: 100px;
+}
+/*  */
+/*THIS PART IS ENTAILS THE RESPONSIVE PROPERTY
+/*  */
 
 @media screen and (max-width: 700px) {
   .feature-items {
@@ -144,10 +196,25 @@ ul {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
-  .hero-image{
+  .hero-image {
     background-image: url(./resources/hero-image-simple-homepage@2x.png);
   }
-  .media-container{
+  .media-container {
     flex-direction: column;
+  }
+  .cta-section {
+    flex-direction: column;
+  }
+  .newsletter-form {
+    width: auto;
+  }
+  .newsletter-email-input + .btn-cta {
+    width: 300px;
+  }
+  .newsletter-form input {
+    width: 100%;
+  }
+  h2{
+    margin: 0;
   }
 }
