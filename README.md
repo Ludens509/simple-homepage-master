@@ -3,7 +3,7 @@
 <h1 align="center">{Simple Homepage} | devChallenges</h1>
 
 <div align="center">
-   Solution for a challenge <a href="https://devchallenges.io/challenge/simple-hompage-alarado" target="_blank">Simple Homepage - Alarado </a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
+   Solution <a href="#">Simple Homepage - Alarado </a> from <a href="https://www.figma.com/design/qXX7POK0iJzU1D2GYhXDjD/307.2.1-Practice-Assignment-Wireframe?m=auto&t=GwapBQYqTpHe8wWv-6" target="_blank">Figma</a>.
 </div>
 
 <div align="center">
@@ -15,10 +15,7 @@
     <a href="{https://your-url-to-the-solution}">
       Solution
     </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenge/simple-hompage-alarado">
-      Challenge
-    </a>
+    
   </h3>
 </div>
 
@@ -74,7 +71,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+This application/site was created as a submission to a [Per Scholas](https://persholas.com/) Assignment.
 
 ## Acknowledgements
 
