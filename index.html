@@ -16,6 +16,14 @@
       .hero-section-container,.features-section,.media-section{
         margin: 50px 50px;
       }
+       img {
+       
+        animation: fadeIn 3s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
     </style>
     
   </head>
@@ -49,14 +57,14 @@
         <p> The fastest way to build and deploy websites with resusanle componente.</p>
         <button type="button" class="btn-hero">Get Started</button>
       </div>
-      <div class="hero-image">
+      <div class="hero-image-container">
         <img
-          src="./resources/hero-image-simple-homepage@2x.png"
+          src="./resources/hero-image-simple-homepage.png"
           alt="hero-image"
-          class="hero-image-svg"
+          style="width: 100%;"
+          class="hero-image"
         />
- 
-    </div>
+      </div>
     </section>
     <section class="features-section">
       <div class="features-container">
@@ -84,7 +92,9 @@
     </section>
     <section class="media-section">
       <div class="media-container">
-        <div class="gif-video"></div>
+        <div class="gif-video">
+          <img src="./resources/animated.gif" alt="anime-gif" srcset="">
+        </div>
         <div class="media-text">
           <h2>Media</h2>
           <p>
