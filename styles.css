@@ -114,10 +114,14 @@ a:active {
   text-transform: uppercase;
   font-size: 16px;
   margin: 70px 0 15px 0;
+  transition: transform 1.5s ease;
 }
-
+.btn-hero:hover{
+  background-color: #223344;
+   transform: scale(1.3);
+}
 /*  */
-
+/*THIS SECTION IS THE FEATURES SECTION
 /*  */
 .feature-items {
   display: grid;
@@ -199,7 +203,7 @@ a:active {
 
 .contact-form-section {
   background-color: #ffffff;
-  margin: 20px 300px;
+  margin: 20px auto;
   border-radius: 8px;
   padding: 20px 80px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -217,6 +221,12 @@ a:active {
   border-radius: 6px;
 }
 .contact-form-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.contact-form-inputs-select {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -270,7 +280,29 @@ th {
   border-bottom: thin dashed #223344;
   border-collapse: collapse;
 }
+/* THIS PART ONLY CONCERN THE ABOUT PAGE */
 
+/*banner*/
+.banner {
+  margin-block-start: 0.83rem;
+  margin-block-end: 0.83rem;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.banner:hover .banner-img {
+  transform: scale(1.3);
+}
+.banner-img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  transition: transform 1.5s ease;
+}
+.text-about-container {
+  display: flex;
+  margin: 30px 20px;
+}
+/*  */
 /*THIS PART IS ENTAILS THE RESPONSIVE PROPERTY
 /*  */
 
@@ -292,6 +324,7 @@ th {
   .cta-section {
     flex-direction: column;
   }
+  /* cta form */
   .newsletter-form {
     width: auto;
   }
@@ -304,17 +337,18 @@ th {
   h2 {
     margin: 0;
   }
+  /* contact */
   .contact-form-inputs {
     flex-direction: column;
   }
   .contact-form-section {
-    margin: 0;
+    padding: 20px 30px;
   }
   .contact-form-inputs {
     display: flex;
     flex-direction: row;
   }
-
+  /* Table */
   .location-section-infos table {
     display: flex;
   }
@@ -322,6 +356,7 @@ th {
     display: flex;
     padding: 10px;
     border-bottom: thin dashed #223344;
+    border-right: thin dashed #223344;
     text-align: center;
     border-collapse: collapse;
   }
