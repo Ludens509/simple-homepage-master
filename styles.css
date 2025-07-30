@@ -23,6 +23,9 @@ body {
   background-color: #f2f9fe;
   margin: 0 20px;
 }
+.header-container{
+  margin-bottom: 30px;
+}
 .header-list {
   display: flex;
   flex-direction: row;
@@ -37,8 +40,21 @@ ul {
   flex-direction: row;
   justify-content: space-between;
 }
-.header-links span {
+.header-links a {
   padding: 0 10px 0 10px;
+  text-decoration: none;
+}
+/* when link is visited */
+a:visited {
+  color: #223344;
+}
+/* when you hover with the mouse */
+a:hover {
+  color: #4ca154;
+}
+/* when link is active */
+a:active {
+  color: #2a4dd0;
 }
 
 .screen-mode-toggle {
@@ -57,9 +73,7 @@ ul {
   color: rgb(55, 65, 81);
 }
 
-.author-info a {
-  text-decoration: none;
-}
+
 /* THIS WHERE THE HEADER END */
 
 /* THIS IS THE HERO-SECTION START */
@@ -97,15 +111,14 @@ ul {
   padding: 16px;
   border-style: none;
   border-radius: 8px;
-  width: 40%;
+  width: 35%;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 16px;
-  margin: 16px 0;
+  margin: 70px 0 15px 0;
 }
 
 /*  */
-
 
 /*  */
 .feature-items {
@@ -115,9 +128,8 @@ ul {
 }
 .feature-items h4 {
   margin: 20px 0;
-
 }
-.features-container h2{
+.features-container h2 {
   margin: 30px 40% 50px 0;
 }
 .media-container {
@@ -149,11 +161,12 @@ ul {
 .cta-section {
   display: flex;
   align-items: center;
-  background-color: #909193;
+  background-color: #223344;
   padding: 80px 50px;
 }
 .cta-section > .cta-text {
   flex: 1;
+  color: thistle;
 }
 .cta-section .newsletter-form {
   position: relative;
@@ -214,7 +227,11 @@ ul {
   .newsletter-form input {
     width: 100%;
   }
-  h2{
+  h2 {
     margin: 0;
   }
+}
+
+.author-info a {
+  text-decoration: none;
 }
